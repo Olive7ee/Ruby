@@ -1,24 +1,21 @@
-ct = 0
+t = 0
 i = "#"
 pyramide = ["#"]
 
-# Demande du nombre d'étages 
 puts "Combien d'étage souhaites tu?"
 print ">"
 etage = gets.to_i
 
 puts etage
-puts "Voici la pyramide, example1:"
+puts "ma première pyramide:"
 
 puts pyramide 
 
-#Example 1 affichage en "bloc"
-
 loop do 
-	pyramide << pyramide[ct] + "#{i}" 
+	pyramide << pyramide[t] + "#{i}" 
 	puts pyramide[-1]
-    ct += 1
-	if ct == etage - 1
+    t += 1
+	if t == etage - 1
 		break
 	end
 end

@@ -1,22 +1,24 @@
-pyramide = []
-ct = etage 
-boucle = 0
+t = 0
+i = "#"
+pyramide = ["#"]
 
 puts "Combien d'étage souhaites tu?"
 print ">"
 etage = gets.to_i
 
+puts etage
+puts "double pyramide"
 
-puts "Voici la pyramide: "
+puts pyramide 
+
+
 loop do 
-	var2 = '#' * (etage - boucle)  
-	var1 = ' ' * (etage - ct)
-	pyramide << var1 + var2
-	ct -= 1
-	boucle +=1
-	if  boucle == etage
+	pyramide << pyramide[t] + "#{i}" 
+	puts pyramide[-1]
+    t += 1
+	if t == etage - 1
 		break
-	end 
+	end
 end
 
 puts pyramide.reverse
