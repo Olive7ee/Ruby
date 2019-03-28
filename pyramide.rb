@@ -12,6 +12,6 @@ espace = n-1
 
 while i <= n
   puts " "*espace + "#"*i
-  space -= 1
+  espace -= 1
   i += 1
 end
