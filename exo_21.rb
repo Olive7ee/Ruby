@@ -1,12 +1,15 @@
+#bonne version
 
-email_list = []
+puts "Salut, bienvenue dans ma super pyramide! Combien d'étages veux-tu ?"
+print "> "
 
-i=0
+n = gets.to_i
 
-for result in 0..49
-	email = "jean.dupont.#{i+=1}@email.fr"
-	email_list << email
+puts "Voici ma pyramide :"
 
+i = 1
+
+while i <= n
+  puts "#"*i 
+  i += 1
 end
-
-puts email_list

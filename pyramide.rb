@@ -1,24 +1,17 @@
-t = 0
-i = "#"
-pyramide = ["#"]
+#bonne version
 
-puts "Combien d'étage souhaites tu?"
-print ">"
-etage = gets.to_i
+puts "Salut, bienvenue dans ma super pyramide! Combien d'étages veux-tu ?"
+print "> "
 
-puts etage
-puts "double pyramide"
+n = gets.to_i
 
-puts pyramide 
+puts "Voici ma pyramide :"
 
+i = 1
+espace = n-1
 
-loop do 
-	pyramide << pyramide[t] + "#{i}" 
-	puts pyramide[-1]
-    t += 1
-	if t == etage - 1
-		break
-	end
+while i <= n
+  puts " "*espace + "#"*i
+  space -= 1
+  i += 1
 end
-
-puts pyramide.reverse
